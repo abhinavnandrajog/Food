@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Roboto',sans-serif;
+    font-size: 100%;
+}
+.warning{
+    color:#f9a700;
+}
+.food{
+    color:black;
+}
+.table-btn{
+    padding:0.225rem 0.675rem;
+    margin-right: 1.86rem;
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+    font-size:1.175rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .4s ease-out 0s;
+    border:0.1875rem solid #f9a700;
+    background-color: #f9a700;
+    
+}
+.table-btn:hover{
+    background-color: white;
+    color: #f9a700;
+
+}
+.login-btn{
+    
+    padding:0.225rem 0.675rem;
+    font-size:1.175rem;
+    margin-right: 0.86rem;
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .4s ease-out 0s;
+    border:0.1875rem solid #f9a700;
+    background-color: #ffc107;
+    
+}
+.login-btn:hover{
+    background-color: white;
+    color: #f9a700;
+
+}
+.navigation .nav-link{
+    font-size: 1.1rem;
+    margin-left: 0.600rem;
+}
+ .nav-item a:hover{
+    color:#f9a700;
+} 
+.nav-item .nav-link:hover   {
+    color:#f9a700;
+} 
+
+.navbar-brand{
+    font-size: 2.0rem;
+}
+.navbar-toggler:focus{
+    outline:none;
+    border:unset;
+    box-shadow: none;
+    
+}
+.navigation.scroll-on{
+    position: fixed;
+    background-color: black;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+} 
+@media(max-width:991px){
+    .navigation{
+        text-align:center;
+        background-color: white;
+    }
+    .navigation .nav-link{
+        line-height: 1.875rem;
+    }
+    .navigation .d-flex{
+        display: flex;
+        justify-content: center;
+    }
+    .dessert{
+        margin-top: 2rem;
+    }
+
+}
+
+.sdpic{
+    height:30rem;
+    z-index: -1;
+}
+.card-img-top{
+    height: 24rem;
+    cursor: pointer;
+}
+.card{
+    transition: all .4s ease-out 0s;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+
+body{
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.text-cola  {
+    color: #880e01;
+}

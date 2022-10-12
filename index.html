@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Prism</title>
+    <link rel="shortcut icon" href="./images/prism.png" type="image/x-icon">
+
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive-style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navigation fixed-top">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="#"><span class="food">Food</span><span class="warning">ਅੱਡਾ</span></a>
+              <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto  mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" href="aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" href="aboutUs.html#contact-us">Contact Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cuisine
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">French</a></li>
+                      <li><a class="dropdown-item" href="italian.html">Italian</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="#">Mexican</a></li>
+                      <li><a class="dropdown-item" href="north.html">North Indian</a></li>
+                      <li><a class="dropdown-item" href="south.html">South Indian</a></li>
+                      <li><a class="dropdown-item" href="chinese.html">Chinese</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" href="desert.html">Deserts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" href="drinks.html">Drinks</a>
+                  </li>
+                </ul>
+                <form class="d-flex" >
+                  <button class="table-btn" onclick="openBook()">Book a Table</button>
+                    <button class="login-btn" onclick="openLogin()">Login</button> 
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="/images/c1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 class="north ">North Indian</h1>
+              <p class="north"> Amritsari Chole Bhature, Kashmiri Rogan Josh, Rajasthani Dal-Bati Churma</p>
+              <p  ><a class="btn btn-lg btn-warning" href="north.html">Explore North Indian Dishes</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="images/sh1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="italian">Drinks</h1>
+              <p class="italian">Shakes,Mocktails,Coffee,Cocktails</p>
+              <p ><a class="btn btn-lg btn-dark" href="drinks.html">Explore Drinks</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="/images/c3.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1 class="italian">ITALIAN</h1>
+              <p class="italian">Pizza,Pasta,Gnocchi,Lasagne,Ribollita,Focaccia</p>
+              <p><a class="btn btn-lg btn-warning" href="#">Explore Italian Dishes</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section id="counter">
+      <div class="counter-section">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+              <h1>
+                <span id="count1"></span>+
+              </h1>
+              <p>Happy Customers</p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+              <h1>
+                <span id="count2"></span>+
+              </h1>
+              <p>Dishes</p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+              <h1>
+                <span id="count3"></span>+
+              </h1>
+              <p>Drinks</p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-md-0 mb-4">
+              <h1>
+                <span id="count4"></span>+
+              </h1>
+              <p>Deserts</p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="culinary">
+      <h1>CULINARY</h1>
+    </div>
+  
+    <div class="container marketing">
+  
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="240" height="240" src="images/sk1.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></img>
+  
+          <h2 class="fw-normal">Sanjeev Kapoor</h2>
+          <p class="nw-normal">Sanjeev Kapoor is an Indian Celebrity chef,Famous for north Indian foods.</p>
+          <p ><a class="btn btn-warning" href="https://en.wikipedia.org/wiki/Sanjeev_Kapoor">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="240" height="240" src="/images/gd1.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+  
+          <h2 class="fw-normal">Gino D'Acampo</h2>
+          <p class="nw-normal">Gino D'Acampo is an Italian chef and best known for his food-focused television shows and cookbooks. </p>
+          <p><a class="btn btn-warning" href="https://en.wikipedia.org/wiki/Gino_D%27Acampo">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="240" height="240" src="images/eo1.webp" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+  
+          <h2 class="fw-normal">Enrique Olvera</h2>
+          <p class="nw-normal">Enrique Olvera is a Mexican chef,Famously known for his Mastery in Mexican Cuisines.</p>
+          <p><a class="btn btn-warning" href="https://en.wikipedia.org/wiki/Enrique_Olvera">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+  
+  
+      <!-- START THE FEATURETTES -->
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h5 class="featurette-heading fw-normal lh-1"> If you don't love South Indian Cuisine,<span class="text-muted">you are either an alien or your taste buds are spolied!</span></h5>
+          <p class="lead">Dosa,Idli-Idly,Vada,Appam,Puttu,Pongal,Malabar Parota, Pesarattu,Coconut Rice,Sambar,Beans carrot Poriyal/Thoran, Patrode, Chicken Ishtu,Konju Varutharaccha Curry & many more.....</p>
+          <p><a class="btn btn-lg btn-warning" href="south.html">Explore South Cuisines </a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/si1.jpeg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Dimsum Galore! <span class="text-muted">I Found My Chinese Food!</span></h2>
+          <p class="lead">Dim Sums,Hot and Sour Soup,Quick Noodles,Szechwan Chilli Chicken,Spring Rolls,Stir Fried Tofu with Rice,Shitake Fried Rice with Water Chestnuts,Chicken with Chestnuts,Honey Chilli Potato,Peri Peri Chicken Satay,Veg Hakka Noodles & many more.....</p>
+          <p><a class="btn btn-lg btn-warning" href="chinese.html">Explore Chinese  </a></p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/images/no1.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Endless Love For Dessert.</span></h2>
+          <p class="lead">Gulab Jammun with IceCream,Apple pie,Chocolate chip cookies,Cheesecake,Pecan pie,Carrot cake,Ice cream,Boston cream pie,Banana pudding,Baked Alaska,	Buckeyes,Indiana sugar cream pie,S'mores & many more.....</p>
+          <p ><a class="btn btn-lg btn-warning" href="desert.html">Explore Dessert's</a></p>
+          
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/images/gj1.jpeg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <!-- /END THE FEATURETTES -->
+  
+    </div><!-- /.container -->
+
+    
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h4><span class="food">Food</span><span class="warning">ਅੱਡਾ</span></h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 footer">Home</a></li>
+          <li class="nav-item mb-2"><a href="aboutUs.html" class="nav-link p-0 footer">About Us</a></li>
+          <li class="nav-item mb-2"><a href="aboutUs.html#contact-us" class="nav-link p-0 footer">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="book.html" class="nav-link p-0 footer">Table Reservations</a></li>
+          <li class="nav-item mb-2"><a href="login.html" class="nav-link p-0 footer">Login</a></li>
+          <li class="nav-item mb-2"><a href="login.html#textbox" class="nav-link p-0 footer">Sign-Up</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h4 class="text-dark">Cuisines</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="north.html" class="nav-link p-0 footer">North Indian</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">French</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Italian</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Mexican</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Chinese</a></li>
+          <li class="nav-item mb-2"><a href="south.html" class="nav-link p-0 footer">South Indian</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h4 class="text-dark">Beverages</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Shakes</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Mocktails</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Cocktails</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Alcoholic</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Beer</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer">Deserts</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="text-dark">Subscribe to our Offers</h5>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-warning" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p><span class="food">Food</span><span class="warning">ਅੱਡਾ</span> &copy; 2022 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a href="#"><img class="facebook" src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a></li>
+        <li class="ms-3"><a href="#"><img class="instagram" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a></li>
+        <li class="ms-3"><a href="#"><img class="twitter" src="https://img.icons8.com/fluency/48/000000/twitter.png"/></a></li>
+        <li class="ms-3"><a href="#"><img class="youtube" src="https://img.icons8.com/color/48/000000/youtube-play.png"/></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>

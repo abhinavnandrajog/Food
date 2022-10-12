@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Prism</title>
+    <link rel="shortcut icon" href="./images/prism.png" type="image/x-icon">
+
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <section class="background-img">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navigation fixed-top">
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="#"><span class="food">Food</span><span class="warning">ਅੱਡਾ</span></a>
+              <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto  mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" href="aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" href="aboutUs.html#contact-us">Contact Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cuisine
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">French</a></li>
+                      <li><a class="dropdown-item" href="#">Italian</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="#">Mexican</a></li>
+                      <li><a class="dropdown-item" href="north.html">North Indian</a></li>
+                      <li><a class="dropdown-item" href="south.html">South Indian</a></li>
+                      <li><a class="dropdown-item" href="#">Chinese</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" href="desert.html">Deserts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-hov" href="drinks.html">Drinks</a>
+                  </li>
+                </ul>
+                <form class="d-flex" >
+                  <button class="table-btn" onclick="openBook()">Book a Table</button>
+                    <button class="login-btn" onclick="openLogin()">Login</button> 
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="about">
+        <div class="about-company">
+            <div class="company-img">
+                <div class="logo-img">
+                    <img src="images/logo.png">
+                </div>
+                <div class="company-text">
+                    <h1>About Us</h1>
+                    <p>Foodਅੱਡਾ was established in 2022 with the intention to provide the best quality Quality for Customers.Right from its inception, Foodਅੱਡਾ had an obsession with
+                    quality which till today is the hallmark of the institution.</p>
+                    <br> 
+                    <p>
+                        We have always put our complete effort to satisfy our Customer's need and today we have gone that extra mile to ensure that Consumers have ate the best Food to make
+                        your Experience Better.</p>
+                </div>
+            </div>
+        </div>
+        <div class="aboutme">
+            <div class="me">
+                <div class="abhinav-img">
+                    <img src="images/abhinav.jpg">
+                </div>
+                <div class="about-text">
+                    <span class="I">I,</span>
+                    <span class="abhi">Abhinav Nandrajog</span>
+                    <span class="Co">Co-Founder</span>
+                    <span class="para">of Foodਅੱਡਾ,who loves Food was always worried about a place where you can get Food each Cuisine.So I came up with idea of Foodਅੱਡਾ.
+                        <br>
+                        <span class="infp">
+                            Roll no:-2010990019<br>
+                            Email - abhinav0019.be20@chitkara.edu.in
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="anume">
+            <div class="anubhav">
+                <div class="anubhav-img">
+                    <img src="images/anubhav.jpeg">
+                </div>
+                <div class="anu-text">
+                    <span class="I">I,</span>
+                    <span class="anu">Anubhav Gupta</span>
+                    <span class="Co1">Managing Director</span>
+                    <span class="para">of Foodਅੱਡਾ,I look over Quality Assurance Part of all the Cusinies and provide World Class Food.<br>
+                    <span class="infp">
+                        Roll no:-2010990096<br>
+                        Email - anubhav0096.be20@chitkara.edu.in
+                    </span>
+                   
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="contact-us">
+        <div class="contact">
+            <div class="contact-main">
+                <span class="cont-head">Contact Us</span>
+                <br><br>
+                <span class="help">We'd ❤️ to help!</span><br><br><br>
+                <span class="feedback">Your feedback is highly appreciated!!</span>
+            </div>
+            <div class="contact-left">
+                    <form class="forms">
+                        <input type="text" name="fullname" placeholder="Full name" class="input-area"><br>
+                        <input type="email" name="email" placeholder="Email Address" class="input-area"><br>
+                        <textarea name="textarea" rows="5" cols="20"  placeholder="Write your message" class="input-area"></textarea>    
+                    </form>
+                    <div class="form-submit">
+                        <button class="send-btn" type="button" value="Submit your Feedback" onclick="alert('Thank you for your Feedback')">Submit your Feedback</button>
+                    </div>
+            </div>
+            <div class="contact-right">
+                        <table class="cont-table">
+                            <tr>
+                                <td><img src="https://img.icons8.com/material-sharp/48/000000/new-post.png"/></td>
+                                <td>abhinav0019.be20@chitkara.edu.in</td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://img.icons8.com/ios-filled/50/000000/marker.png"/></td>
+                                <td>Chitkara University</td>
+                            </tr>
+                            <tr >
+                                <td class="number"><img src="https://img.icons8.com/ios-filled/50/000000/incoming-call.png"/></td>
+                                <td>(+91) 6284665396</td>
+                            </tr>
+                        </table>
+
+            </div>
+        </div>
+    </section>  
+
+    <div class="container">
+        <footer class="py-5">
+  
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p><span class="food">Food</span><span class="warning">ਅੱਡਾ</span> &copy; 2022 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a href="#"><img class="facebook" src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/></a></li>
+              <li class="ms-3"><a href="#"><img class="instagram" src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/></a></li>
+              <li class="ms-3"><a href="#"><img class="twitter" src="https://img.icons8.com/fluency/48/000000/twitter.png"/></a></li>
+              <li class="ms-3"><a href="#"><img class="youtube" src="https://img.icons8.com/color/48/000000/youtube-play.png"/></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+
+        <!-- JavaScript Bundle with Popper -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      
+        <script>
+          function openBook(){
+
+          window.open("book.html");
+
+          }
+
+          function openLogin(){
+          window.open("login.html");
+          }
+        </script>
+    
+    </body>
+    </html>
