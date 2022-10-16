@@ -290,7 +290,7 @@ form#girisyap .girisbtn:hover {
     right: 0;
     width: 50%;
     height: 100%;
-    background:url(/images/login1.webp);
+    background:url(images/login1.webp);
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -301,7 +301,7 @@ form#girisyap .girisbtn:hover {
     width: 50%;
     height: 100%;
     /* background: #fa9700 url(http://ertekinn.com/loginsignup/login.png); */
-    background:url(/images/login1.webp);
+    background:url(images/login1.webp);
     opacity: 1;
     background-size: cover;
     background-position: 50% 50%;
